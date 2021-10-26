@@ -1,4 +1,4 @@
-import { makeIterable, observable, action } from "mobx";
+import { makeObservable, observable, action } from "mobx";
 import { chartsService } from "../../services";
 
 export class ChartsStore {
@@ -10,7 +10,7 @@ export class ChartsStore {
 
   constructor(rootStore) {
     this.rootStore = rootStore;
-    makeIterable(this);
+    makeObservable(this);
   }
 
   @action

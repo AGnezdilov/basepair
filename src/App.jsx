@@ -5,6 +5,7 @@ import './styles/index.css';
 
 const App = () => (
   <div className="App">
+    {console.log(process.env.REACT_APP_VANTAGE_API_KEY)}
     <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
       <p>

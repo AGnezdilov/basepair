@@ -18,9 +18,9 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-app-rewired.cmd start",
+    "build": "react-app-rewired.cmd build",
+    "test": "react-app-rewired.cmd test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -42,6 +42,8 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-decorators": "^7.15.8"
+    "@babel/plugin-proposal-decorators": "^7.15.8",
+    "customize-cra": "^1.0.0",
+    "react-app-rewired": "^2.1.8"
   }
 }
