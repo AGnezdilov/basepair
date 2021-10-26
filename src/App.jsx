@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
+import ChartsList from './components/reusable/ChartsList';
 
 import './styles/index.css';
+import styles from './app.module.scss';
+import { FINANCIALS_COMPANIES_LIST, HEALTHCARE_COMPANIES_LIST, TECHNOLOGY_COMPANIES_LIST } from './constants/chartConstants';
 
 const App = () => (
-  <div className="App">
-    {console.log(process.env.REACT_APP_VANTAGE_API_KEY)}
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
-    </header>
+  <div className={styles.wrapper}>
+    <div className={styles.list}>
+      <div className={styles.item}>
+        <ChartsList title="Technology" companies={TECHNOLOGY_COMPANIES_LIST} />
+      </div>
+      <div className={styles.item}>
+        <ChartsList title="Financials" companies={FINANCIALS_COMPANIES_LIST} />
+      </div>
+      <div className={styles.item}>
+        <ChartsList title="Healthcare" companies={HEALTHCARE_COMPANIES_LIST} />
+      </div>
+    </div>
   </div>
-);
+)
+
 
 export default App;
