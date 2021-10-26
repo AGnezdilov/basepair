@@ -5,3 +5,5 @@ export class RootStore {
     this.chartsStore = new ChartsStore(this);
   }
 }
+
+export const createStore = () => new RootStore();

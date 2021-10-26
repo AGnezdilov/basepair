@@ -10,6 +10,7 @@
     "mobx": "^6.3.5",
     "mobx-react-lite": "^3.2.1",
     "plotly.js": "^2.5.1",
+    "qs": "^6.10.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-plotly.js": "^2.5.1",
@@ -39,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.15.8"
   }
 }
