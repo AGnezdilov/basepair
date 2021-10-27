@@ -1,0 +1,9 @@
+.wrapper{
+  padding: 40px 25px;
+}
+.item{
+  margin-top: 30px;
+  &:first-child{
+    margin-top: 0;
+  }
+}
